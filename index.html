@@ -3,25 +3,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
-    <title>Blog &ndash; Layout Examples &ndash; Pure</title>
+    <meta name="description" content="Yazılım Maratonu 2017 ön eleme etabı.">
+    <title>YM '17</title>
 
     <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
 
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-old-ie-min.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
-    <!--<![endif]-->
-
-
-        <!--[if lte IE 8]>
-            <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
-        <![endif]-->
-        <!--[if gt IE 8]><!-->
-            <link rel="stylesheet" href="css/layouts/blog.css">
-        <!--<![endif]-->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+   
+      
+    <link rel="stylesheet" href="css/layouts/blog.css">
+       
 </head>
 <body>
 
@@ -54,7 +45,7 @@
                 <section class="post">
 
                     <header class="post-header">
-                        <img width="48" height="48" alt="deneme" class="post-avatar" src="img/common/deneme.jpg">
+                        <!--img width="48" height="48" alt="..." class="post-avatar" src="img/common/..."-->
 
                         <h2 class="post-title">Deneme Etabı</h2>
 
@@ -70,13 +61,10 @@
                         </p>
                     </div>
                 </section>
-              </div>
-
-            <div class="posts">
-
+         
                 <section class="post">
                     <header class="post-header">
-                        <img width="48" height="48" alt="dil" class="post-avatar" src="img/common/dil.ico">
+                        <!--img width="48" height="48" alt="..." class="post-avatar" src="img/common/..."-->
 
                         <h2 class="post-title">Programlama Dilleri</h2>
 
@@ -88,29 +76,80 @@
                             kullanabilirsiniz. Her bir problemin çözümünü tek bir kaynak kod
                             dosyası içinde göndermeniz gerekmektedir.
                             Örneğin, C için ".c", Java için ".java" uzantılı tek bir dosya yüklemelisiniz.
-                            <br><br>
-                            Dillerin zaman sınırı çarpanları:
-                            <ul>
-                              <li>
-                                C: x1
-                              </li>
-                              <li>
-                                C++: x1
-                              </li>
-                              <li>
-                                Python2: x5
-                              </li>
-                              <li>
-                                Python3: x5
-                              </li>
-                              <li>
-                                Java: x2
-                              </li>
-                              <li>
-                                C#: x2
-                              </li>
+                            
+                            
+                            
+                            <table class="pure-table">
+                              <thead>
+                                  <tr>
+                                      <th>Dil</th>
+                                      <th>Dosya uzantıları</th>
+                                      <th>Zaman çarpanı</th>
+                                  </tr>
+                              </thead>
 
-                            </ul>
+                              <tbody>
+                                  <tr>
+                                      <td>C</td>
+                                      <td>.c</td>
+                                      <td>x1</td>
+                                  </tr>
+
+                                  <tr>
+                                      <td>C++</td>
+                                      <td>.cpp</td>
+                                      <td>x1</td>
+                                  </tr>
+
+                                  <tr>
+                                      <td>Java</td>
+                                      <td>.java</td>
+                                      <td>x2</td>
+                                  </tr>
+
+                                  <tr>
+                                      <td>C#</td>
+                                      <td>.cs</td>
+                                      <td>x2</td>
+                                  </tr>
+
+                                  <tr>
+                                      <td>Python2</td>
+                                      <td>.py</td>
+                                      <td>x5</td>
+                                  </tr>
+
+                                  <tr>
+                                      <td>Python3</td>
+                                      <td>.py</td>
+                                      <td>x5</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                        </p>
+                    </div>
+                </section>
+                
+                <section class="post">
+                    <header class="post-header">
+                        <!--img width="48" height="48" alt="..." class="post-avatar" src="img/common/..."-->
+                        <h2 class="post-title">Puanlandırma</h2>
+
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                            Yarışmadaki her sorunun ayrı değerde puanı vardır. Herhangi bir sorudan puan
+                            almak için gönderdiğiniz programın, o soruya ait tüm girdilere doğru cevap
+                            verebilmesi gerekmektedir. Toplam puanları aynı olan takımlar ceza puanlarına (penalty) göre
+                            ceza puanı az olandan çok olana doğru sıralanır.<br>
+                            Her bir soru için ceza puanı şu şekilde hesaplanır: <br>
+                            <em>t</em>: sorunun doğru cevaplandığı dakika<br>
+                            <em>w</em>: soru için yapılan gönderimlerden "WRONG ANSWER" ya da "TIME LIMIT" sonucu alınanların sayısı<br>
+                            <em>penalty = t + w*20</em><br>
+                            <br>
+                            <em>"COMPILE ERROR" sonucu alan gönderimlerin puana etkisi yoktur.</em>
+                            
                         </p>
                     </div>
                 </section>
@@ -119,8 +158,6 @@
             <div class="footer">
                 <div class="pure-menu pure-menu-horizontal">
                     <ul>
-                        <li class="pure-menu-item"><a href="http://purecss.io/" class="pure-menu-link">About</a></li>
-                        <li class="pure-menu-item"><a href="http://twitter.com/yuilibrary/" class="pure-menu-link">Twitter</a></li>
                         <li class="pure-menu-item"><a href="http://github.com/yahoo/pure/" class="pure-menu-link">GitHub</a></li>
                     </ul>
                 </div>
