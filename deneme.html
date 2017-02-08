@@ -19,16 +19,10 @@
 </head>
 <body>
 
-
-
-
-
-
-
 <div id="layout" class="pure-g">
     <div class="sidebar pure-u-1 pure-u-md-1-4">
         <div class="header">
-            <h1 class="brand-title">Yazılım Maratonu '17'</h1>
+            <h1 class="brand-title">Yazılım Maratonu '17</h1>
             <h2 class="brand-tagline">Ön Eleme</h2>
 
             <nav class="nav">
@@ -42,30 +36,43 @@
     </div>
 
     <div class="content pure-u-1 pure-u-md-3-4">
+        <div class="pure-menu pure-menu-horizontal">
+            <ul class="pure-menu-list">
+                <li><a href="index.html" class="pure-menu-item pure-menu-selected"></a></li>
+                <li class="pure-menu-item">
+                  <a href="index.html" class="pure-menu-link"><i class="fa fa-home" aria-hidden="true"></i></a>
+                </li>
+                <li class="pure-menu-item pure-menu-selected">
+                  <a href="#" class="pure-menu-link">Deneme Yarışması</a>
+                </li>
+            </ul>
+        </div>
         <div>
-            <div class="pure-menu custom-restricted-width">
-                <!--span class="pure-menu-heading"></span-->
 
-                <ul class="pure-menu-list">
-                    <li class="pure-menu-item post-nav">
-                      <img width="48" height="48" alt="test" class="post-icon" src="img/common/test.png">
-                      
-                      <h2><a href="deneme.html"  class="pure-menu-link">Deneme Yarışması Hakkında</a></h2>
-                    </li>
-                    <li class="pure-menu-item post-nav">
-                      <img width="48" height="48" alt="system" class="post-icon" src="img/common/system.png">
+            <div class="posts">
+                <section class="post">
 
-                      <h2><a href="domjudge.html"  class="pure-menu-link">DOMjudge nedir, nasıl kullanılır?</a></h2>
-                    </li>
-                    <li class="pure-menu-item post-nav">
-                      <img width="48" height="48" alt="test" class="post-icon" src="img/common/code.png">
+                    <header class="post-header">
+                        <img width="48" height="48" alt="test" class="post-icon" src="img/common/test.png">
 
-                      <h2><a href="diller.html"  class="pure-menu-link">Programlama Dilleri</a></h2>
-                    </li>
+                        <h2 class="post-title">Deneme Yarışması</h2>
 
-                </ul>
+                    </header>
+
+                    <div class="post-description">
+                        <p>
+                            Ön eleme öncesinde yarışmacıların sistemi
+                            denemesi için saat {{test.time}} deneme yarışması
+                            açılacaktır. Takım adınız ve takım liderinizin mail adresine gönderilen
+                            parolanız ile sisteme giriş yapabilirsiniz. Deneme
+                            etabındaki sorulardan alacağınız puan, yarışmadaki puanınızı etkilemeyecektir.
+                            Sistemin kullanımıyla ilgili sorununuz varsa "Clarification" bölümünden
+                            sorabilirsiniz.
+                        </p>
+                    </div>
+                </section>
+
             </div>
-            
 
             <div class="footer">
                 <div class="pure-menu pure-menu-horizontal">
@@ -83,8 +90,6 @@
         </div>
     </div>
 </div>
-
-
 
 
 

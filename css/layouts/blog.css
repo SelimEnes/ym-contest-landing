@@ -34,7 +34,7 @@ h3 {
 }
 
 .sidebar {
-    background: rgb(61, 79, 93);
+    background: rgb(61, 146, 201);
     color: #fff;
 }
 
@@ -99,8 +99,8 @@ h3 {
     color: #222;
     margin-bottom: 0.2em;
 }
-.post-avatar {
-    border-radius: 50px;
+.post-icon {
+    /*border-radius: 50px;*/
     float: right;
     margin-left: 1em;
 }
